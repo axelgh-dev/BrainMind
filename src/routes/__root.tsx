@@ -5,6 +5,7 @@ import {
   Scripts,
 } from '@tanstack/react-router'
 import appCss from '../styles.css?url'
+import logoUrl from '../assets/logo.png?url'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -13,7 +14,11 @@ export const Route = createRootRoute({
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { title: 'Mapa mental' },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [
+      { rel: 'stylesheet', href: appCss },
+      { rel: 'icon', type: 'image/png', href: logoUrl },
+      { rel: 'apple-touch-icon', href: logoUrl },
+    ],
   }),
   component: RootComponent,
 })
