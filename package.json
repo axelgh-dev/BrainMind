@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.0",
-    "nitro": "latest",
+    "nitro": "3.0.260610-beta",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
     "@vitejs/plugin-react": "^4.3.4",
